@@ -1,1 +1,10 @@
 <p>listado works!</p>
+<ul *ngIf ="cadena.length <= 5">
+    <li *ngFor="let item of cadena">
+        {{item}}
+    </li>
+</ul>
+<form (submit)="addItem()">
+    <input type="text" [(ngModel)]="nuevaCadena"
+    [ngModelOptions]="{standalone: true}"/>
+</form>
