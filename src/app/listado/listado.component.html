@@ -1,10 +1,15 @@
-<p>listado works!</p>
-<ul *ngIf ="cadena.length <= 5">
-    <li *ngFor="let item of cadena">
-        {{item}}
-    </li>
-</ul>
+<h4>Añadir tarea</h4>
 <form (submit)="addItem()">
-    <input type="text" [(ngModel)]="nuevaCadena"
-    [ngModelOptions]="{standalone: true}"/>
+  <input
+    type="text"
+    [(ngModel)]="nuevaCadena"
+    [ngModelOptions]="{ standalone: true }"
+  />
 </form>
+
+<h3>Listado de tareas</h3>
+<ul>
+  <li *ngFor="let todo of cadena">
+    {{ todo }}
+  </li>
+</ul>
