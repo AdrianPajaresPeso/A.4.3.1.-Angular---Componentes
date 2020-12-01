@@ -1,1 +1,25 @@
-<p>misclientes works!</p>
+<h2>MIS CLIENTES</h2>
+
+<ul>
+  <li *ngFor="let item of clientes">{{ item.nombre }}, {{ item.direccion }}</li>
+</ul>
+<form (submit)="addCliente()">
+  
+  <label for="nombre">Nombre</label>
+  <input
+    id="nombre"
+    type="text"
+    [(ngModel)]="cliente.nombre"
+    [ngModelOptions]="{ standalone: true }"
+  />
+  <label for="iden">Calle</label>
+  <input
+    id="iden"
+    type="text"
+    [(ngModel)]="cliente.direccion"
+    [ngModelOptions]="{ standalone: true }"
+  />
+  
+  
+  <input type="submit" value="Enviar" />
+</form>

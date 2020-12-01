@@ -1,4 +1,3 @@
 export class Cliente {
-    private nombre;
-    private direccion;
+    constructor(public nombre: string = '', public direccion: string = ''){}
 }

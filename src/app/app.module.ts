@@ -7,11 +7,13 @@ import { ListadoComponent } from './listado/listado.component';
 
 import {FormsModule} from '@angular/forms';
 import { MisclientesComponent } from './misclientes/misclientes.component';
+import { CondicionalesComponent } from './condicionales/condicionales.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListadoComponent,
-    MisclientesComponent
+    MisclientesComponent,
+    CondicionalesComponent
   ],
   imports: [
     BrowserModule,
