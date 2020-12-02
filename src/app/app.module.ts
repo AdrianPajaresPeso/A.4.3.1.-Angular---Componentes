@@ -9,13 +9,15 @@ import {FormsModule} from '@angular/forms';
 import { MisclientesComponent } from './misclientes/misclientes.component';
 import { CondicionalesComponent } from './condicionales/condicionales.component';
 import { CorreoComponent } from './components/correo/correo.component';
+import { ListacorreosComponent } from './listacorreos/listacorreos.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListadoComponent,
     MisclientesComponent,
     CondicionalesComponent,
-    CorreoComponent
+    CorreoComponent,
+    ListacorreosComponent
   ],
   imports: [
     BrowserModule,
